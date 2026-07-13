@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For KeystoneLetterpress</title>
+    <style>
+        /* Smooth animated gradient background */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #ee9b52, #b73ce7, #238ed5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            line-height: 1.4;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Cool Button Styling */
+        .pdf-button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            background: linear-gradient(45deg, #ff4e50, #f9d423);
+            background-size: 200% auto;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(255, 78, 80, 0.4);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Hover and active states */
+        .pdf-button:hover {
+            background-position: right center;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 78, 80, 0.6);
+        }
+
+        .pdf-button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(255, 78, 80, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello Donald!</h1>
+        <a href="assets/GD-BusinessCard.pdf" target="_blank" class="pdf-button">Link to PDF</a>
+    </div>
+
+</body>
+</html>
